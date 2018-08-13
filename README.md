@@ -1,3 +1,3 @@
 # jquery calendar plugin
-
-a simple calendar plugin
+ 
+ a simple calendar plugin
