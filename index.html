@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+<meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1">
+<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8;">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery日历插件</title>
+<link rel="stylesheet" href="css/calendar.css">
+</head>
+<body>
+<div>
+  <!-- <div id="ca" >
+      <div class="calendar-container" style="width:280px;height:320px;">
+          <div class="calendar-view">
+                <div class="view view-date">
+                    <div class="calendar-hd">
+                        <div class="view-toggle">
+                            2018/8
+                        </div>
+                        <div class="arrow-box">
+                            <a><</a>
+                            <a>></a>
+                        </div>
+                    </div>
+                    <div class="calendar-ct">
+                        <div class="week">
+                            <div class="item">日</div>
+                            <div class="item">一</div>
+                            <div class="item">二</div>
+                            <div class="item">三</div>
+                            <div class="item">四</div>
+                            <div class="item">五</div>
+                            <div class="item">六</div>                            
+                        </div>
+                        <div class="day">
+                            <div class="old">29</div>
+                            <div class="old">30</div>
+                            <div class="old">31</div>
+                            <div class="new">1</div>
+                            <div class="new">2</div>
+                            <div class="new">3</div>
+                            <div class="new">4</div>
+                            <div class="new">5</div>
+                            <div class="new">6</div>
+                            <div class="new today">7</div>
+                            <div class="new">8</div>
+                            <div class="new">9</div>
+                            <div class="new">10</div>
+                            <div class="new">11</div>
+                            <div class="new">12</div>
+                            <div class="new">13</div>
+                            <div class="new">14</div>
+                            <div class="new">15</div>
+                            <div class="new">16</div>
+                            <div class="new">17</div>
+                            <div class="new">18</div>
+                            <div class="new">19</div>
+                            <div class="new">20</div>
+                            <div class="new">21</div>
+                            <div class="new">22</div>
+                            <div class="new">23</div>
+                            <div class="new">24</div>
+                            <div class="new">25</div>
+                            <div class="new">26</div>
+                            <div class="new">27</div>
+                            <div class="new">28</div>
+                            <div class="new">29</div>
+                            <div class="new">30</div>
+                            <div class="new">31</div>
+                            <div class="old">1</div>
+                            <div class="old">2</div>
+                            <div class="old">3</div>
+                            <div class="old">4</div>
+                            <div class="old">5</div>
+                            <div class="old">6</div>
+                            <div class="old">7</div>
+                            <div class="old">8</div>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="view view-month"></div>
+          </div>
+           
+      </div>      
+  </div> -->
+
+  <div id="demoDate"></div>
+  <div id="demoMonth"></div>
+</div>
+<script src="js/jquery-1.11.1.min.js"></script> 
+<script src="js/calendar.js"></script> 
+<script>
+   $("#ca .calendar-ct .week div.item,#ca .calendar-ct .day div.old,#ca .calendar-ct .day div.new").css("width","40px").css("height","40px");
+
+    $(function(){
+        $("#demoDate").calendar({
+            view:'date',
+            onSelected:function(v){
+                console.info(v);
+            }
+        });
+
+        $("#demoMonth").calendar({
+            view:'month',
+            onSelected:function(v){
+                console.info(v);
+            }
+        });
+
+    });
+
+</script>
+
+
+</body>
+</html>
