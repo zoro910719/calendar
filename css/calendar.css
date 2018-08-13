@@ -1,0 +1,29 @@
+.calendar-container{width:100%;height:100%;border:1px solid #ece6e6;font-size:14px;color:#bfbdbd;background-color: #fbfbfb;
+}
+.calendar-view{width:100%;position: relative;}
+.calendar-view .view{transition:0.6s;position: absolute;top:0;left:0;backface-visibility:hidden;}
+
+.calendar-hd{display:flex;justify-content:space-between;font-size:18px;padding:10px 5px 5px 10px;}
+.calendar-hd .view-toggle:hover,.calendar-hd .arrow-box a:hover{cursor:pointer;color:#8e8585}
+.calendar-hd .view-toggle{color:#a29b9b;}
+.calendar-hd .arrow-box a{padding:0 5px 0 5px;}
+
+.calendar-ct .day,
+.calendar-ct .week{display:flex;flex-wrap:wrap;}
+.calendar-ct .week div.item,
+.calendar-ct .day div.old,
+.calendar-ct .day div.new{ display:flex;justify-content:center;align-items:center;}
+
+.calendar-ct .day div.new{color:#656060;cursor:pointer;border-radius: 50%;}
+.calendar-ct .day div.now{background-color:#5ebfd6 !important;color:#fff;border-radius: 50%;}
+.calendar-ct .day div.active{background-color: #d0ece5;color:#5ebfd6;}
+
+.calendar-ct .month{display: flex;flex-wrap:wrap;}
+.calendar-ct .month div.old,
+.calendar-ct .month div.now{ display:flex;justify-content:center;align-items:center;cursor:pointer;color:#656060;}
+.calendar-ct .month div.now{background-color:#5ebfd6 !important;color:#fff;border-radius: 50%;}
+
+.calendar-date .view-date{transform: rotateY(0deg);visibility: visible;z-index:2;}
+.calendar-date .view-month{transform: rotateY(180deg);visibility: hidden;z-index:1;}
+.calendar-month .view-month{transform: rotateY(0deg);visibility: visible;z-index:2;}
+.calendar-month .view-date{transform: rotateY(180deg);visibility: hidden;z-index:1;}
