@@ -111,7 +111,6 @@
                         '</div>'].join('');
             
             this.$element.html(html);
-            var $weekHtml=this.getWeekHtml();
             this.setView(this.selectView,year,month);            
         },
         event:function(){
@@ -229,10 +228,9 @@
             }
         },
         setView:function(view,year,month){
-            var _this=this;
             if(view=="date") {
-                if(_this.$element.find('.view-date .calendar-ct .week').length==0){
-                    _this.$element.find('.view-date .calendar-ct').append(_this.getWeekHtml());
+                if(this.$element.find('.view-date .calendar-ct .week').length==0){
+                    this.$element.find('.view-date .calendar-ct').append(this.getWeekHtml());
                 }                
                 this.updateDateView(year,month);
                 this.$element.removeClass('calendar-month').addClass('calendar-date');
